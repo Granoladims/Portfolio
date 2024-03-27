@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+header{
+    background-color: white;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    float: right;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 15px 75px;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background: gray;
+    color: lightseagreen;
+}
+
+ul li.active a{
+    background: black;
+    color: lightseagreen;
+}
