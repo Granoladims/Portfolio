@@ -5,6 +5,12 @@
     font-family: century;
 }
 
+.banderol{
+    background-image: url('Font\,banderol.jpg');
+    color: #fff; /* Couleur du texte sur la bande */
+    padding: 50px; /* Espacement interne pour le contenu */
+}
+
 header{
     background-color: white;
     height: 100vh;
@@ -15,23 +21,24 @@ header{
 ul{
     list-style: none;
     display: flex;
-    margin-top: 20px;
+    margin-top: -10px;
     float: right;
 }
 
 ul li a{
     text-decoration: none;
-    color: #000;
+    color: white;
     padding: 15px 75px;
     text-transform: uppercase;
     border: 3px solid transparent;
     margin: 10px;
     font-weight: 500;
     transition: 0.6s ease;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li a:hover{
-    background: gray;
+    background: white;
     color: lightseagreen;
 }
 

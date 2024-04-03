@@ -5,6 +5,35 @@
     font-family: century;
 }
 
+body {
+    min-height: 100vh; /* 100% de la hauteur de la fenêtre du navigateur */
+    margin: 0;
+    padding: 0;
+}
+
+.font{
+    background-image: url('Font.jpg');
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 200vh;
+}
+
+.banderol{
+    background-image: url('Font\,banderol.jpg');
+    color: #fff; /* Couleur du texte sur la bande */
+    padding: 50px; /* Espacement interne pour le contenu */
+}
+
+.texteDePrésentation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Couleur du texte */
+    font-size: 24px; /* Taille du texte */
+    /* Autres styles de texte */
+}
+
 header{
     background-color: white;
     height: 200vh;
@@ -19,23 +48,24 @@ ul{
 ul{
     list-style: none;
     display: flex;
-    margin-top: 20px;
+    margin-top: -10px;
     float: right;
 }
 
 ul li a{
     text-decoration: none;
-    color: #000;
+    color: white;
     padding: 15px 75px;
     text-transform: uppercase;
     border: 3px solid transparent;
     margin: 10px;
     font-weight: 500;
     transition: 0.6s ease;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li a:hover{
-    background: gray;
+    background: white;
     color: lightseagreen;
 }
 
