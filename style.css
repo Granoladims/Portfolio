@@ -5,12 +5,6 @@
     font-family: century;
 }
 
-body {
-    min-height: 100vh; /* 100% de la hauteur de la fenêtre du navigateur */
-    margin: 0;
-    padding: 0;
-}
-
 .font{
     background-image: url('Font.jpg');
     background-position: center;
