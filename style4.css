@@ -22,7 +22,10 @@ ul{
     list-style: none;
     display: flex;
     margin-top: -10px;
-    float: right;
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center;
+    
 }
 
 ul li a{
@@ -38,11 +41,46 @@ ul li a{
 }
 
 ul li a:hover{
-    background: white;
-    color: lightseagreen;
+    color: darkred;
 }
 
 ul li.active a{
-    background: black;
-    color: lightseagreen;
+    color: darkred;
+}
+
+.font{
+    background-image: url('Font.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 200vh;
+}
+
+.titre{
+    position: absolute;
+    top: 195px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titre h1{
+    color: black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contacts{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white; /* Couleur du texte */
+    font-size: 24px; /* Taille du texte */
+    /* Autres styles de texte */
+}
+
+.contacts h2{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }

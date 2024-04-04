@@ -5,27 +5,10 @@
     font-family: century;
 }
 
-.font{
-    background-image: url('Font.jpg');
-    background-position: center;
-    background-attachment: scroll;
-    min-height: 200vh;
-}
-
 .banderol{
     background-image: url('Font\,banderol.jpg');
     color: #fff; /* Couleur du texte sur la bande */
     padding: 50px; /* Espacement interne pour le contenu */
-}
-
-.texteDePrésentation{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Couleur du texte */
-    font-size: 24px; /* Taille du texte */
-    /* Autres styles de texte */
 }
 
 header{
@@ -43,7 +26,9 @@ ul{
     list-style: none;
     display: flex;
     margin-top: -10px;
-    float: right;
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center;
 }
 
 ul li a{
@@ -59,13 +44,11 @@ ul li a{
 }
 
 ul li a:hover{
-    background: white;
-    color: lightseagreen;
+    color: darkred;
 }
 
 ul li.active a{
-    background: #000;
-    color: lightseagreen;
+    color: darkred;
 }
 
 .principale{
@@ -73,9 +56,17 @@ ul li.active a{
     margin: 0 auto;
 }
 
+.font{
+    background-image: url('Font.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 200vh;
+}
+
 .titre{
     position: absolute;
-    top: 175px;
+    top: 195px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -91,6 +82,9 @@ ul li.active a{
     top: 300px;
     left: 50%;
     transform: translate(-50%);
+    color: white; /* Couleur du texte */
+    font-size: 24px; /* Taille du texte */
+    /* Autres styles de texte */
 }
 
 .texteDePrésentation h2{
