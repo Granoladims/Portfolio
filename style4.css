@@ -1,34 +1,32 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: century;
 }
 
-.banderol{
+.banderol {
     background-image: url('Font\,banderol.jpg');
     color: #fff; /* Couleur du texte sur la bande */
     padding: 50px; /* Espacement interne pour le contenu */
 }
 
-header{
+header {
     background-color: white;
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
-ul{
+ul {
     list-style: none;
-    display: flex;
-    margin-top: -10px;
     display: flex;
     align-items: center; /* Centre verticalement les éléments */
     justify-content: center;
-    
+    margin-top: -10px;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: white;
     padding: 15px 75px;
@@ -40,15 +38,12 @@ ul li a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-ul li a:hover{
-    color: darkred;
+ul li a:hover,
+ul li.active a {
+    color: royalblue;
 }
 
-ul li.active a{
-    color: darkred;
-}
-
-.font{
+.font {
     background-image: url('Font.jpg');
     background-size: 100%;
     background-position: center;
@@ -56,31 +51,37 @@ ul li.active a{
     min-height: 200vh;
 }
 
-.titre{
+.titre,
+.contacts {
     position: absolute;
-    top: 195px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    text-align: center; /* Pour centrer le texte horizontalement */
 }
 
-.titre h1{
+.titre {
+    top: 26%; /* Positionner le titre plus haut */
     color: black;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
 
-.contacts{
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    transform: translate(-50%);
+.contacts {
+    top: 42%; /* Positionner les contacts en dessous du titre */
     color: white; /* Couleur du texte */
     font-size: 24px; /* Taille du texte */
-    /* Autres styles de texte */
 }
 
-.contacts h2{
+.titre h1,
+.contacts h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contacts h2 {
     color: black;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contacts h3 {
+    color: blue;
+    font-size: 20px;
 }

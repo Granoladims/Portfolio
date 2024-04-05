@@ -1,37 +1,34 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: century;
 }
 
-.banderol{
+/* Styles généraux */
+.banderol {
     background-image: url('Font\,banderol.jpg');
     color: #fff; /* Couleur du texte sur la bande */
     padding: 50px; /* Espacement interne pour le contenu */
 }
 
-header{
+header {
     background-color: white;
     height: 200vh;
     background-size: cover;
     background-position: center;
 }
 
-ul{
+ul {
+    list-style: none;
+    display: flex;
+    margin: -10px 0 0 0; /* Marge supprimée et raccourcie */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center;
     scroll-margin: auto;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    margin-top: -10px;
-    display: flex;
-    align-items: center; /* Centre verticalement les éléments */
-    justify-content: center;
-}
-
-ul li a{
+ul li a {
     text-decoration: none;
     color: white;
     padding: 15px 75px;
@@ -43,52 +40,50 @@ ul li a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-ul li a:hover{
-    color: darkred;
+ul li a:hover,
+ul li.active a {
+    color: royalblue;
 }
 
-ul li.active a{
-    color: darkred;
-}
-
-.principale{
+/* Sections spécifiques */
+.principale {
     max-width: 114rem;
     margin: 0 auto;
 }
 
-.font{
+.font {
     background-image: url('Font.jpg');
-    background-size: 100%;
+    background-size: cover; /* Remplacement de background-size: 100% */
     background-position: center;
     background-attachment: scroll;
     min-height: 200vh;
 }
 
-.titre{
+.titre {
     position: absolute;
-    top: 195px;
+    top: 30%; /* Positionner le titre plus haut */
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center; /* Centrer le texte horizontalement */
 }
 
-.titre h1{
-    color: black;
-    font-size: 50px;
+.titre h1,
+.texteDePrésentation h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.texteDePrésentation{
+.texteDePrésentation {
     position: absolute;
-    top: 300px;
+    top: 125%; /* Positionner le texte en dessous du titre */
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
+    text-align: center; /* Centrer le texte horizontalement */
     color: white; /* Couleur du texte */
     font-size: 24px; /* Taille du texte */
-    /* Autres styles de texte */
 }
 
-.texteDePrésentation h2{
+.texteDePrésentation h2 {
     color: black;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
