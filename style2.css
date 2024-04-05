@@ -45,6 +45,13 @@ ul li.active a {
     color: royalblue;
 }
 
+.font {
+    background-image: url('Font.jpg');
+    background-size: cover; /* Remplacement de background-size: 100% */
+    background-position: center;
+    min-height: 200vh;
+}
+
 .titre {
     position: absolute;
     top: 30%;

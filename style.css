@@ -55,7 +55,6 @@ ul li.active a {
     background-image: url('Font.jpg');
     background-size: cover; /* Remplacement de background-size: 100% */
     background-position: center;
-    background-attachment: scroll;
     min-height: 200vh;
 }
 

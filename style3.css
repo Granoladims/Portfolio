@@ -46,7 +46,9 @@ ul li.active a {
 }
 
 .font {
-    background: url('Font.jpg') center/cover fixed; /* Ajout de l'attribut fixed pour la position de fond fixe */
+    background-image: url('Font.jpg');
+    background-size: cover; /* Remplacement de background-size: 100% */
+    background-position: center;
     min-height: 200vh;
 }
 
