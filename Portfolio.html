@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="banderol">
+            <div class="Présentation">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Présentation</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="ProjetEnCours.html">Projets en cours</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+            <div class="font">
+            </div>
+        <div class="titre">
+            <h1>Mon portfolio :</h1>
+        </div>
+        <div class="projet1">
+            <img src="Luffy.jpg" alt="luffygear5" style="width: 400px; height: auto;">
+            <div class="texteprojet1">
+                <h2>Voici mon premier dessin. Il représente le personnage principal de l'anime One Piece, Luffy, sous sa forme Gear 5.</h2><br>
+                <h2>Ce dessin m'a pris environ 4 heures à réaliser.</h2><br>
+                <h2>Les contours, les couleurs, les textes, les jeux de lumières, tout a été réalisé par mes soins.</h2><br>
+                <h2>Je l'ai fait sur un logiciel de dessins : Procreate.</h2>
+        </div>
+        <div class="projet2">
+            <img src="pikachu.jpg" alt="pikachuvenom" style="width: 400px; height: auto;">
+            <div class="texteprojet2">
+                <h3>Voici mon second dessin. Il représente Pikachu se faisant absorber par l'entité Vénom.</h3><br>
+                <h3>Ce dessin m'a pris environ 2 heures à réaliser.</h3><br>
+                <h3>Je l'ai réalisé à l'occasion d'Halloween.</h3><br>
+                <h3>J'ai simplement reproduit un modèle déjà existant sur Pinterest, mais en l'améliorant à ma façon.</h3><br>
+                <h3>Les couleurs, les détails ainsi que le font en feu sont tout droit sortis de mon imagination.</h3><br>
+                <h3>Je l'ai fait sur le même logiciel de dessins : Procreate.</h3>
+        </div>
+        <div class="projet3">
+            <img src="bonne année.jpg" alt="bonneannée" style="width: 700px; height: auto;">
+            <div class="texteprojet3">
+                <h4>Voici ma carte de vœux pour le nouvel an 2024.</h4><br>
+                <h4>Contexte : je travaille en tant que service civique dans une école primaire. La directrice de l'école m'a demandé de réaliser une carte de vœux à destination des parents et des différents services de l'école.</h4><br>
+                <h4>Mon modèle de base est une photo (voir juste en bat), sur laquelle il y avait des petits hérissons en poterie, très colorés, très jolis, mais côte à côte sur une table d'une classe.</h4><br>
+                <h4>En gros, j'ai dû détourer chaque hérisson un par un, pour les placés de sortes à ce que ça recouvre la feuille, puis mettre un cadre avec le texte au milieu... J'ai bien précisé CHAQUE !</h4>
+                <h4>Ce fut long...</h4><br>
+                <h4>Mais je suis quand même plutôt content du résultat, ça rend bien, c'est mignon, je considère ça comme une mission réussi.</h4>
+        </div>
+        <div class="projet35">
+            <img src="Hérissons.jpg" alt="hérissonsdebases" style="width: 300px; height: auto;">
+        </div>
+        <div class="projet4">
+            <img src="siteOZCOM.png" alt="OZCOM" style="width: 700px; height: auto;">
+            <div class="texteprojet4">
+                <h5>Voici le site que j'ai réalisé avec mon duo lors de mon année en BUT Informatique à Fontainebleau.</h5><br>
+                <h5>J'ai codé ce site en HTML et CSS dans le cadre d'un projet noté.</h5><br>
+                <h5>C'est grâce à ce site que j'ai pu faire mon site sur lequel vous êtes actuellement. Grâce à VSCode, le logiciel permettant de coder ces sites, et GitHub, l'hébergeur.</h5><br>
+                <h5>Si vous vous demandez, on a eu 12/20.</h5><br>
+                <h5>L'idée du devoir était de créer une entreprise quelconque, et de faire son site Internet.</h5><br>
+                <h5>Notre entreprise, sur une idée originale d'un ami proche, serait de pouvoir louer des motocross ou des quads, dans un circuit tout terrain extérieur ou intérieur.</h5><br>
+                <h5>Je précise aussi que j'ai simplement fait le code, pas les textes, c'est mon duo qui s'en est occupé.</h5>
+                <h5>Je tiens à le dire, car j'ai conscience du nombre astronomique de fautes d'orthographe qu'il y a sur ce site (désolé Micki, la bise).</h5><br>
+                <h5>Tout ne marche pas super bien, on a malheureusement manqué de temps et de connaissance pour le finir.</h5><br>
+                <h5>Voici le lien du site si vous souhaitez y jeter un coup d'œil :</h5>
+                <h5><a href="https://adims77.github.io/OZCOM-site/Index.html">https://adims77.github.io/OZCOM-site/Index.html</a></h5>
+                </div>
+
+             <button onclick="scrollToTop()" id="btnScrollToTop" title="Retour en haut">Retour en haut</button>
+             <script>
+                window.onscroll = function() {scrollFunction()};
+            
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("btnScrollToTop").style.display = "block";
+                    } else {
+                        document.getElementById("btnScrollToTop").style.display = "none";
+                    }
+                }
+            
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+   </header>
+</body>
+</html>

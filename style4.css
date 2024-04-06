@@ -13,6 +13,7 @@
 
 header {
     background-color: white;
+    background-image: url('Font.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -41,13 +42,6 @@ ul li a {
 ul li a:hover,
 ul li.active a {
     color: royalblue;
-}
-
-.font {
-    background-image: url('Font.jpg');
-    background-size: cover; /* Remplacement de background-size: 100% */
-    background-position: center;
-    min-height: 200vh;
 }
 
 .titre,

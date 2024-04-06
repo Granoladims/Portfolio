@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio de Adam</title>
@@ -17,7 +17,7 @@
                             <a href="#">Présentation</a>
                         </li>
                         <li>
-                            <a href="page2.html">Portfolio</a>
+                            <a href="Portfolio.html">Portfolio</a>
                         </li>
                         <li>
                             <a href="ProjetEnCours.html">Projets en cours</a>
@@ -45,6 +45,26 @@
             <h2>En espérant que mon histoire en inspire peut-être certains ou certaines. On m’a souvent dit que ce que je faisais ne servait à rien, que je m’obstinais, que j’étais têtu, mais je n’ai jamais douté de moi un instant ni même arrêté d’y croire, j’ai le sentiment que j’y suis presque, c’est une promesse que je me suis faite à moi-même.</h2><br>
             <h2>J’espère également que mon portfolio vous plaira. Je prends toutes les sortes de retours afin de m’améliorer, n’hésitez pas à me contacter dans l’onglet Contact.</h2>
         </div>
+
+        <button onclick="scrollToTop()" id="btnScrollToTop" title="Retour en haut">Retour en haut</button>
+             <script>
+                window.onscroll = function() {scrollFunction()};
+            
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("btnScrollToTop").style.display = "block";
+                    } else {
+                        document.getElementById("btnScrollToTop").style.display = "none";
+                    }
+                }
+            
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
     </header>
 </body>
 </html>

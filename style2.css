@@ -16,8 +16,10 @@ body {
 
 header {
     background-color: white;
-    height: 100vh;
-    background: url('Font.jpg') no-repeat center / cover;
+    background-image: url('Font.jpg');
+    height: 445vh;
+    background-size: cover;
+    background-position: center;
 }
 
 ul {
@@ -45,13 +47,6 @@ ul li.active a {
     color: royalblue;
 }
 
-.font {
-    background-image: url('Font.jpg');
-    background-size: cover; /* Remplacement de background-size: 100% */
-    background-position: center;
-    min-height: 200vh;
-}
-
 .titre {
     position: absolute;
     top: 30%;
@@ -63,4 +58,92 @@ ul li.active a {
 
 .titre h1 {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.projet1 img {
+    margin-top: 300px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.texteprojet1 {
+    margin-left: 500px; /* Ajoute de l'espace entre l'image et le texte */
+    margin-right: 50px;
+    margin-top: -350px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.projet2 img {
+    margin-top: 300px;
+    margin-right: 50px;
+    margin-left: 1050px;
+    border-radius: 10px;
+}
+
+.texteprojet2 {
+    margin-left: 100px; /* Ajoute de l'espace entre l'image et le texte */
+    margin-right: 50px;
+    margin-top: -390px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.projet3 img {
+    margin-top: 300px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.texteprojet3 {
+    margin-left: 800px; /* Ajoute de l'espace entre l'image et le texte */
+    margin-right: 50px;
+    margin-top: -550px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.projet35 img {
+    margin-top: 50px;
+    margin-left: 1000px;
+    border-radius: 10px;
+}
+
+.projet4 img {
+    margin-top: 200px;
+    margin-left: 760px;
+    border-radius: 10px;
+}
+
+.texteprojet4 {
+    margin-left: 50px; /* Ajoute de l'espace entre l'image et le texte */
+    margin-right: 50px;
+    margin-right: 800px;
+    margin-top: -450px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+#btnScrollToTop {
+    position: fixed; /* Positionner le bouton de façon fixe */
+    bottom: 20px; /* Distance du bas de la page */
+    right: 20px; /* Distance de la droite de la page */
+    z-index: 99; /* Assurez-vous que le bouton apparaît au-dessus du contenu */
+    font-size: 20px;
+    background-image: url('Font\,banderol.jpg');
+    border-radius: 10px;
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprimez la bordure */
+    cursor: pointer; /* Indique que le bouton est cliquable */
+    padding: 10px; /* Ajoutez un peu d'espace autour du texte */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnScrollToTop:hover {
+    color: royalblue; /* Changez la couleur du texte au survol */
+    transition: 0.6s ease;
 }
