@@ -2,19 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: century;
 }
 
-/* Styles généraux */
 .banderol {
     background-image: url('Font\,banderol.jpg');
-    color: #fff; /* Couleur du texte sur la bande */
-    padding: 50px; /* Espacement interne pour le contenu */
+    color: #fff;
+    padding: 3rem;
 }
 
 header {
     background-color: white;
-    height: 200vh;
+    background-image: url('Font.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -22,22 +20,22 @@ header {
 ul {
     list-style: none;
     display: flex;
-    margin: -10px 0 0 0; /* Marge supprimée et raccourcie */
-    align-items: center; /* Centre verticalement les éléments */
     justify-content: center;
-    scroll-margin: auto;
+    margin-top: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li a {
     text-decoration: none;
     color: white;
-    padding: 15px 75px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     text-transform: uppercase;
-    border: 3px solid transparent;
-    margin: 10px;
+    border: 1rem white;
     font-weight: 500;
     transition: 0.6s ease;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li a:hover,
@@ -45,64 +43,53 @@ ul li.active a {
     color: royalblue;
 }
 
-/* Sections spécifiques */
-.principale {
-    max-width: 114rem;
-    margin: 0 auto;
-}
-
-.font {
-    background-image: url('Font.jpg');
-    background-size: cover; /* Remplacement de background-size: 100% */
-    background-position: center;
-    min-height: 200vh;
-}
-
 .titre {
-    position: absolute;
-    top: 30%; /* Positionner le titre plus haut */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    text-align: center; /* Centrer le texte horizontalement */
+    text-align: center;
+    margin-top: 5rem;
 }
 
-.titre h1,
-.texteDePrésentation h2 {
+.titre h1 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
 }
 
 .texteDePrésentation {
-    position: absolute;
-    top: 125%; /* Positionner le texte en dessous du titre */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: justify; /* Centrer le texte horizontalement */
-    color: white; /* Couleur du texte */
-    font-size: 24px; /* Taille du texte */
+    text-align: justify;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .texteDePrésentation h2 {
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
 }
 
 #btnScrollToTop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    right: 2rem;
     z-index: 99;
-    font-size: 20px;
+    font-size: 1rem;
     background-image: url('Font\,banderol.jpg');
-    border-radius: 10px;
-    color: #fff;
     border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 1rem;
     cursor: pointer;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #btnScrollToTop:hover {
-    color: royalblue; /* Changez la couleur du texte au survol */
+    color: royalblue;
     transition: 0.6s ease;
+}
+
+.banderol2 {
+    background-image: url('Font\,banderol.jpg');
+    color: #fff;
+    padding: 4rem;
 }
