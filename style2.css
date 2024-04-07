@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: century;
-}
-
 .banderol {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url('Font\,banderol.jpg');
-    color: #fff; /* Couleur du texte sur la bande */
-    padding: 50px; /* Espacement interne pour le contenu */
+    color: #fff;
+    padding: 2rem;
+    z-index: 100;
 }
 
 header {
     background-color: white;
     background-image: url('Font.jpg');
-    height: 445vh;
     background-size: cover;
     background-position: center;
 }
@@ -25,22 +25,24 @@ header {
 ul {
     list-style: none;
     display: flex;
-    align-items: center; /* Centre verticalement les éléments */
     justify-content: center;
-    margin-top: -10px;
+    margin-top: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li a {
     text-decoration: none;
     color: white;
-    padding: 15px 75px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     text-transform: uppercase;
-    border: 3px solid transparent;
-    margin: 10px;
+    border: 1rem white;
     font-weight: 500;
     transition: 0.6s ease;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 ul li a:hover,
 ul li.active a {
@@ -48,47 +50,52 @@ ul li.active a {
 }
 
 .titre {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 25px;
+    text-align: center;
+    padding-top: 10rem;
 }
 
 .titre h1 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.projet1 {
+    display: flex;
+    flex-direction: row; /* Met les éléments en ligne (horizontalement) */
+    align-items: flex-start; /* Aligne les éléments en haut de leur conteneur */
 }
 
 .projet1 img {
-    margin-top: 300px;
-    margin-left: 50px;
+    flex: 0 0 auto; /* Empêche l'image de se redimensionner */
+    padding-top: 5rem;
+    padding-left: 5rem;
     border-radius: 10px;
 }
 
 .texteprojet1 {
-    margin-left: 500px; /* Ajoute de l'espace entre l'image et le texte */
-    margin-right: 50px;
-    margin-top: -350px;
-    text-align: justify;
+    flex: 1; /* Permet au texte de prendre autant d'espace que possible */
+    padding-left: 2rem; /* Ajoute un espacement entre l'image et le texte */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
-.projet2 img {
-    margin-top: 300px;
-    margin-right: 50px;
-    margin-left: 1050px;
-    border-radius: 10px;
-}
+/* Media query pour les écrans de petite taille */
+@media (max-width: 768px) {
+    .projet1 {
+        flex-direction: column; /* Met les éléments en colonne (verticalement) */
+    }
 
-.texteprojet2 {
-    margin-left: 100px; /* Ajoute de l'espace entre l'image et le texte */
-    margin-right: 50px;
-    margin-top: -390px;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    .projet1 img {
+        padding: 0; /* Supprime le padding de l'image */
+        border-radius: 0; /* Supprime la bordure arrondie */
+        width: 100%; /* Redimensionne l'image pour remplir la largeur */
+    }
+
+    .texteprojet1 {
+        padding-left: 0; /* Supprime le padding gauche */
+        margin-right: 0; /* Supprime la marge droite */
+        font-size: 14px;
+    }
 }
 
 .projet3 img {
@@ -129,21 +136,28 @@ ul li.active a {
 }
 
 #btnScrollToTop {
-    position: fixed; /* Positionner le bouton de façon fixe */
-    bottom: 20px; /* Distance du bas de la page */
-    right: 20px; /* Distance de la droite de la page */
-    z-index: 99; /* Assurez-vous que le bouton apparaît au-dessus du contenu */
-    font-size: 20px;
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 99;
+    font-size: 1rem;
     background-image: url('Font\,banderol.jpg');
-    border-radius: 10px;
-    color: #fff; /* Couleur du texte du bouton */
-    border: none; /* Supprimez la bordure */
-    cursor: pointer; /* Indique que le bouton est cliquable */
-    padding: 10px; /* Ajoutez un peu d'espace autour du texte */
-    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 #btnScrollToTop:hover {
-    color: royalblue; /* Changez la couleur du texte au survol */
+    color: royalblue;
     transition: 0.6s ease;
+}
+
+.banderol2 {
+    background-image: url('Font\,banderol.jpg');
+    color: #fff;
+    margin-top: 5rem;
+    padding: 2rem;
 }

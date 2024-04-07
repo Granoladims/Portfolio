@@ -2,19 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: century;
 }
 
 .banderol {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url('Font\,banderol.jpg');
-    color: #fff; /* Couleur du texte sur la bande */
-    padding: 50px; /* Espacement interne pour le contenu */
+    color: #fff;
+    padding: 2rem;
+    z-index: 100;
 }
 
 header {
     background-color: white;
     background-image: url('Font.jpg');
-    height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -22,59 +25,64 @@ header {
 ul {
     list-style: none;
     display: flex;
-    align-items: center; /* Centre verticalement les éléments */
     justify-content: center;
-    margin-top: -10px;
+    margin-top: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li a {
     text-decoration: none;
     color: white;
-    padding: 15px 75px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     text-transform: uppercase;
-    border: 3px solid transparent;
-    margin: 10px;
+    border: 1rem white;
     font-weight: 500;
     transition: 0.6s ease;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 ul li a:hover,
 ul li.active a {
     color: royalblue;
 }
 
-.titre,
-.contacts {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center; /* Pour centrer le texte horizontalement */
-}
-
 .titre {
-    top: 26%; /* Positionner le titre plus haut */
-    color: black;
-    font-size: 25px;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.titre h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
 }
 
 .contacts {
-    top: 42%; /* Positionner les contacts en dessous du titre */
-    color: white; /* Couleur du texte */
-    font-size: 24px; /* Taille du texte */
-}
-
-.titre h1,
-.contacts h2, h3 {
+    text-align: justify;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    margin-left: 20%;
+    margin-right: 20%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .contacts h2 {
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
 }
 
 .contacts h3 {
     color: blue;
     font-size: 20px;
+}
+
+.banderol2 {
+    background-image: url('Font\,banderol.jpg');
+    color: #fff;
+    margin-bottom: 0%;
+    padding: 2rem;
 }

@@ -104,16 +104,16 @@ ul li.active a {
 /*Pour téléphone*/
 @media (max-width: 768px) {
     .banderol {
-        padding: 0rem;
+        padding: 1rem;
     }
 
     ul li a {
-        padding: 0.5rem 1rem;
-        font-size: 0.2rem;
+        padding: 2rem 2rem;
+        font-size: 1rem;
     }
 
     .titre h1 {
-        padding-top: 2rem;
+        padding-top: 1rem;
         font-size: 2rem;
     }
 

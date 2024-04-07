@@ -4,63 +4,103 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: century;
-}
-
 .banderol {
-    background: url('Font\,banderol.jpg') center/cover;
-    color: #fff; /* Couleur du texte sur la bande */
-    padding: 50px; /* Espacement interne pour le contenu */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('Font\,banderol.jpg');
+    color: #fff;
+    padding: 2rem;
+    z-index: 100;
 }
 
 header {
     background-color: white;
-    height: 100vh;
-    background: url('Font.jpg') center/cover;
+    background-image: url('Font.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 ul {
     list-style: none;
     display: flex;
-    margin-top: -10px;
-    align-items: center; /* Centre verticalement les éléments */
     justify-content: center;
+    margin-top: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li a {
     text-decoration: none;
     color: white;
-    padding: 15px 75px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     text-transform: uppercase;
-    border: 3px solid transparent;
-    margin: 10px;
+    border: 1rem white;
     font-weight: 500;
-    transition: color 0.6s ease; /* Animation de transition pour la couleur */
-    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
 }
+
 
 ul li a:hover,
 ul li.active a {
     color: royalblue;
 }
 
-.font {
-    background-image: url('Font.jpg');
-    background-size: cover; /* Remplacement de background-size: 100% */
-    background-position: center;
-    min-height: 200vh;
-}
-
 .titre {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 25px;
+    text-align: center;
+    padding-top: 10rem;
 }
 
 .titre h1 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.projet1 {
+    display: flex;
+    flex-direction: row; /* Met les éléments en ligne (horizontalement) */
+    align-items: flex-start; /* Aligne les éléments en haut de leur conteneur */
+}
+
+.projet1 img {
+    flex: 0 0 auto; /* Empêche l'image de se redimensionner */
+    padding-top: 5rem;
+    padding-left: 5rem;
+    border-radius: 10px;
+}
+
+.texteprojet1 {
+    flex: 1; /* Permet au texte de prendre autant d'espace que possible */
+    padding-left: 2rem; /* Ajoute un espacement entre l'image et le texte */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Media query pour les écrans de petite taille */
+@media (max-width: 768px) {
+    .projet1 {
+        flex-direction: column; /* Met les éléments en colonne (verticalement) */
+    }
+
+    .projet1 img {
+        padding: 0; /* Supprime le padding de l'image */
+        border-radius: 0; /* Supprime la bordure arrondie */
+        width: 100%; /* Redimensionne l'image pour remplir la largeur */
+    }
+
+    .texteprojet1 {
+        padding-left: 0; /* Supprime le padding gauche */
+        margin-right: 0; /* Supprime la marge droite */
+        font-size: 14px;
+    }
+}
+
+.banderol2 {
+    background-image: url('Font\,banderol.jpg');
+    color: #fff;
+    margin-top: 5rem;
+    padding: 2rem;
 }
