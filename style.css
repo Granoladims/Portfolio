@@ -91,5 +91,6 @@ ul li.active a {
 .banderol2 {
     background-image: url('Font\,banderol.jpg');
     color: #fff;
+    margin-top: 5rem;
     padding: 4rem;
 }
