@@ -12,7 +12,7 @@
     background-image: url('Font\,banderol.jpg');
     color: #fff;
     padding: 2rem;
-    z-index: 100; /* Assurez-vous que la bande reste au-dessus des autres éléments */
+    z-index: 100;
 }
 
 header {
@@ -99,4 +99,24 @@ ul li.active a {
     color: #fff;
     margin-top: 5rem;
     padding: 2rem;
+}
+
+/*Pour téléphone*/
+@media (max-width: 768px) {
+    .banderol {
+        padding: 1.5rem;
+    }
+
+    ul li a {
+        padding: 1rem 2rem;
+    }
+
+    .titre h1 {
+        font-size: 2rem;
+    }
+
+    .texteDePrésentation {
+        margin: 3rem 1rem;
+        font-size: 1rem;
+    }
 }
