@@ -108,17 +108,16 @@ ul li.active a {
     }
 
     ul li a {
-        padding: 2rem 2rem;
-        font-size: 1rem;
+        padding: 5rem 1rem;
+        font-size: 0.6rem;
     }
 
     .titre h1 {
-        padding-top: 1rem;
+        margin-top: 0rem;
         font-size: 2rem;
     }
 
     .texteDePrésentation {
-        font-size: 0.10rem;
         margin-left: 10%;
         margin-right: 10%;
     }
