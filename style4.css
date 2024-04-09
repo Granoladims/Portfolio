@@ -81,8 +81,36 @@ ul li.active a {
 }
 
 .banderol2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-image: url('Font\,banderol.jpg');
     color: #fff;
-    margin-top: 5rem;
     padding: 2rem;
+    z-index: 100;
+}
+
+/*Pour téléphone*/
+@media (max-width: 768px) {
+    .banderol {
+        padding: 1rem;
+    }
+
+    ul li a {
+        padding: 1rem 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .titre h1 {
+        margin-top: 0rem;
+        font-size: 2rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .contacts {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
