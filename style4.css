@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-image: url('Font\,banderol.jpg');
+    background-image: url('Banderole.jpg');
     color: #fff;
     padding: 2rem;
     z-index: 100;
@@ -85,7 +85,7 @@ ul li.active a {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-image: url('Font\,banderol.jpg');
+    background-image: url('Banderole.jpg');
     color: #fff;
     padding: 2rem;
     z-index: 100;
